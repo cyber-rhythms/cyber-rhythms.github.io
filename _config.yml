@@ -31,7 +31,12 @@ twitter_username: jekyllrb
 github_username:  cyber-rhythms
 
 # Build settings
-theme: minima
+
+# WL: Removed "theme:minima" using comments hashtag below as part of migration
+# from gem-based theme to regular theme (explicitly storing appropriate folders rather than using pointers.)
+# Reactivate it below if required by uncommenting.
+# theme: minima
+
 plugins:
   - jekyll-feed
 
