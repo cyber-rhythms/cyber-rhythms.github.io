@@ -1,9 +1,9 @@
 ---
 layout: post
-katex: true
 title:  "Pointwise and uniform convergence in statistics and machine learning."
 date:   2021-04-02 14:32:42 +0000
 categories: jekyll update
+katex: True
 ---
 
 **In this note, I want to clarify how and why the somewhat subtle distinction between pointwise and uniform convergence in probability is important for understanding the generalisation ability of a machine learning algorithm.**
