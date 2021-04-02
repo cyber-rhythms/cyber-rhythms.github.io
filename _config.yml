@@ -40,8 +40,13 @@ github_username:  cyber-rhythms
 plugins:
   - jekyll-feed
 
-# WL: Included this for MathJax functionality. 
-use_mathjax: true
+# WL: Use this for MATHJAX functionality.
+# use_mathjax: true
+
+# WL: Use this for KaTeX functionality (using auto-rendering, to work with GitHub pages).
+# https://www.xuningyang.com/2021-01-11-katex-with-jekyll/
+kramdown:
+  math_engine: katex
 
 # Exclude from processing.
 # The following items will not be processed, by default.
