@@ -67,3 +67,7 @@ kramdown:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# WL: Use this to show excerpts from your blog article in the home page.
+
+# show_excerpts: true
