@@ -32,7 +32,7 @@ github_username:  cyber-rhythms
 
 # Build settings
 
-# WL: Removed "theme:minima" using comments hashtag below as part of migration
+# NB: Removed "theme:minima" using comments hashtag below as part of migration
 # from gem-based theme to regular theme (explicitly storing appropriate folders rather than using pointers.)
 # Reactivate it below if required by uncommenting.
 # theme: minima
@@ -40,13 +40,18 @@ github_username:  cyber-rhythms
 plugins:
   - jekyll-feed
 
-# WL: Use this for MATHJAX functionality.
+# NB: Use this for MATHJAX functionality.
 # use_mathjax: true
 
-# WL: Use this for KaTeX functionality (using auto-rendering, to work with GitHub pages).
+# NB: Use this for default KaTeX functionality (using auto-rendering, to work with GitHub pages).
 # https://www.xuningyang.com/2021-01-11-katex-with-jekyll/
 kramdown:
   math_engine: katex
+
+# NB: Use this for overriding KaTeX defaults for inline mathematics (NOT CURRENTLY WORKING).
+# Overrides the usage of $$ for inline mathematics to $ instead.
+# kramdown:
+#   math_engine: nil
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -68,6 +73,5 @@ kramdown:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-# WL: Use this to show excerpts from your blog article in the home page.
-
+# NB: Use this to show excerpts from your blog article in the home page.
 # show_excerpts: true

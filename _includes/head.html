@@ -9,7 +9,7 @@
     {%- include google-analytics.html -%}
   {%- endif -%}
 
-  <!-- Code snippet for using MATHJAX in the blog.-->
+  <!--NB: Code snippet for using MATHJAX in the blog.-->
   <!-- If you want to use Mathjax again, uncomment the code beginning '{%if site.use_mathjax %}' and ending '{% endif %}' below-->
   <!-- Make sure that the first character and last character of the code respect the indentations, 1 tab in from <head>-->
   <!-- From https://github.com/fastai/fast_template/blob/6f72d2957a4e302e437f4437dd6a1e5a1f14274a/_includes/head.html -->
@@ -32,15 +32,28 @@
     </script>
   {% endif %}-->
 
-  <!--WL: Have included a new mathjax.html in _includes, so that Plotly can display Mathjax appropriately.-->
-
+  <!--NB: Have included a new mathjax.html in _includes, so that Plotly can display Mathjax appropriately.-->
+  <!--TO DO: Make this conditional on a parameter in Markdown YAML front matter.-->
   {%- include mathjax.html-%}
 
-  <!--Code snippet for using KaTeX with auto-rendering, compatible with Github pages.-->
+  <!--NB: Code snippet for using KaTeX with browser auto-rendering from a content delivery network, compatible with Github pages.-->
   <!--From method 1. at https://www.xuningyang.com/2021-01-11-katex-with-jekyll/-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+  <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"></script>
+  <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          renderMathInElement(document.body, {
+              // ...options...
+          });
+      });
+  </script>-->
+
+  <!--NB: Code snippet for using KaTeX with local files, compatiblity with Github pages not yet checked.-->
+  <!--https://stackoverflow.com/questions/60905163/why-katex-is-not-loaded-locally?rq=1-->
+  <link rel="stylesheet" href="/assets/katex/katex.min.css">
+  <script defer src="/assets/katex/katex.min.js"></script>
+  <script defer src="/assets/katex/contrib/auto-render.min.js"></script>
   <script>
       document.addEventListener("DOMContentLoaded", function() {
           renderMathInElement(document.body, {
