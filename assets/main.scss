@@ -16,10 +16,10 @@
 }*/
 
 // NB: To address deeper browser compatibility for Palatino Linotype W02 fonts using locally hosted files.
-@font-face {font-family: "Palatino Linotype W02";
+@font-face {font-family: "Palatino Linotype";
             src: url("/assets/Palatino Linotype W02/Palatino Linotype W02.eot");
             src: url("/assets/Palatino Linotype W02/Palatino Linotype W02.woff2") format("woff2"),
             url("/assets/Palatino Linotype W02/Palatino Linotype W02.woff") format("woff"),
             url("/assets/Palatino Linotype W02/Palatino Linotype W02.ttf") format("truetype"),
-            url("/assets/Palatino Linotype W02/Palatino Linotype W02.svg#svg Palatino Linotype W02") format("svg");
+            url("/assets/Palatino Linotype W02/Palatino Linotype W02.svg#svg Palatino Linotype") format("svg");
 }
