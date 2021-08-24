@@ -1,12 +1,12 @@
 ---
-layout: post
+layout: blog-post
 title:  "Pointwise and uniform convergence in statistics and machine learning."
+subtitle: |
+            In this note, I want to clarify how and why the somewhat subtle distinction between pointwise and uniform convergence in probability is important for understanding the generalisation ability of a machine learning algorithm.
 date:   2021-04-02 14:32:42 +0000
-categories: jekyll update
+categories: jekyll update   
 katex: True
 ---
-
-**In this note, I want to clarify how and why the somewhat subtle distinction between pointwise and uniform convergence in probability is important for understanding the generalisation ability of a machine learning algorithm.**
 
 In this publically available lecture [here](https://www.youtube.com/watch?v=UFInqHnkYPU&list=PLJPW8OTey_OZk6K_9QLpguoPg_Ip3GkW_&index=3) [1], Larry Wasserman makes the following remark concerning pointwise and uniform convergence in probability, in context of binary classification:
 
@@ -20,7 +20,7 @@ It turns out that this distinction is highly significant for theoretical underst
 
 In this post, I will take the expository route of presenting an excerpt from Larry Wasserman's lecture notes concerning the distinction between pointwise and uniform convergence, followed by brief informal arguments made in the lecture recording on why this is important in the supervised binary classification setting. I will present the queries that arose as I parsed these materials. Then I will outline empirical risk minimisation, the general framework necessary for elucidating on these queries; followed by a deeper intuitive explanation on the distinction between pointwise deviations (concentration inequalities), and uniform deviations (uniform bounds). The crux of the post will be how excess risk and generalisation error can be bounded by a uniform deviation, followed by an illustration of this principle on a finite function class. I will conclude with how this strategy relates to the subfield of empirical processes, and how it underlies more sophisticated approaches in statistical learning theory.
 
-#### **The illustrative context - binary classification.**
+## **The illustrative context - binary classification.**
 
 The following is an excerpt from "Lecture Notes 3: Uniform Bounds" in the Carnegie Mellon university course, "36-705 Intermediate Statistics Fall 2016". This is a compulsory course for MSc/PhD students studying machine learning. The materials were downloaded from the original course page, but as the course page has been taken down, is available at my [GitHub repo](https://github.com/cyber-rhythms/cmu-36-705-intermediate-statistics-fall-2016/blob/master/lecture-notes/lecture-03-uniform-bounds.pdf) [2]. I have included some comments to preserve narrative flow.
 
@@ -99,7 +99,7 @@ There a few unresolved issues in the note excerpt which need a more thorough tre
 >
 > What is the distinction between a probabilistic bound on  p+ointwise deviations and on a uniform deviation?
 
-#### **Empirical risk minimisation - a general framework.**
+## **Empirical risk minimisation - a general framework.**
 
 It turns out that the distinction between pointwise and uniform convergence is fundamental to the workings of a procedure referred to as *empirical risk minimisation* (ERM), a broad framework for understanding the generalisation ability of machine learning algorithms, specifically, supervised learning problems such as regression and classification, and also unsupervised learning problems such as density estimation. Empirical risk minimisation is the framework being invoked when we select $$\hat{f}$$ by minimising training error.
 
@@ -158,7 +158,7 @@ $$R(\hat{f}) - R(f^*)$$
 
 For this post, but also more broadly in statistical learning theory, the excess risk is the primary quantity of interest.
 
-#### **Bounding excess risk with concentration inequalities - the issue.**
+## **Bounding excess risk with concentration inequalities - the issue.**
 
 We are now interested in specifying a probabilistic bound on the excess risk. The excess risk is a random quantity, due to a dependence of $$R(\hat{f})$$ on the training examples through $$\hat{f}$$, whilst $$f^*$$ is unknown but fixed. To that end, we require bounds of the following form:
 
@@ -182,7 +182,7 @@ $$\hat{R}_n(\hat{f}) = \frac{1}{n} \sum^n_{i=1} \mathbb{I}(Y_i \neq \hat{f}(X_i)
 
 is no longer a sum of I.I.D. random variables. Hence we cannot invoke a concentration inequality, and the primary reason for this is dependence of $$\hat{f}$$ on the training data.
 
-#### **Empirical risk minimisation - why concentration inequalities are insufficient.**
+## **Empirical risk minimisation - why concentration inequalities are insufficient.**
 
 > Why are probabilistic pointwise deviations insufficient?
 
@@ -243,7 +243,7 @@ To summarise this section, the key take aways from the figures and discussion ar
 * *Understanding empirical risk minimisation and generalisation error; and bounding excess risk requires a qualitatively stronger statement, that is, a bound on a uniform deviation.*
 * *The concerns highlighted carry over to the asymptotic case, where concentration inequalities are pointwise convergence probability in statements, whereas uniform convergence in probability statements are required.*
 
-#### **Empirical risk minimisation - the need for uniform deviations.**
+## **Empirical risk minimisation - the need for uniform deviations.**
 
 > What is the distinction between a probabilistic bound on pointwise deviations and on a uniform deviation?
 
@@ -303,7 +303,7 @@ $$\mathbb{P} \left( \exists f \in \mathcal{F} : \lvert \hat{R}_n(f) - R(f) \rver
 
 For pointwise and uniform deviation failure events, we do not speak of 'trapping probability in some interval $$[-\epsilon, \epsilon]$$ with high confidence', i.e. at least $$1 - \delta$$. Rather, we correspondingly speak of 'bounding the tail probability' outside the interval $$[-\epsilon, \epsilon]$$ such that is small i.e. less than $$\delta$$.
 
-#### **Bounding the excess risk through a uniform deviation.**
+## **Bounding the excess risk through a uniform deviation.**
 
 Having done a fair amount of visual hand-waving, let's see more formally how to bound the excess risk with a uniform deviation. Returning to our original decomposition of the excess risk:
 
@@ -330,7 +330,7 @@ Previously, we examined how a bound on the excess risk could not be dealt with d
 
 As so far our discussion has been somewhat abstract, the points we have made can best be illustrated through a proof example.
 
-#### **Bounding the excess risk for a finite function class.**
+## **Bounding the excess risk for a finite function class.**
 
 Let's see how to bound the excess risk for the simple case of binary linear classification where the function class $$\mathcal{F}$$ is finite. This is already covered excellently in 36-705. But I have included the proof here because I wish to explicitly show how bounding a uniform deviation is central to the proof strategy, and how this strategy is the bedrock of understanding more complex examples in statistical learning theory.
 
@@ -398,7 +398,7 @@ Lastly, similar arguments can be made about the excess risk $$R(\hat{f}) - R(f^*
 
 Hopefully this now concretely clarifies how one way of studying the behaviour of excess risk is by considering uniform deviations of the empirical risk and risk over an entire function class $$\mathcal{F}$$.
 
-#### **Relationship to empirical processes.**
+## **Relationship to empirical processes.**
 
 It turns out that the study of uniform deviations and uniform convergence is one of the central preoccupations of a subfield of statistics and probability known as *empirical process theory*. To motivate further reading in this area, I've outlined an excerpt from Bodhissatva Sen's following notes [here]().
 
@@ -430,7 +430,7 @@ and probabilistic limit theorems concerned for the processes
 
 $$\{ \sqrt{n}(\mathbb{P}_n - P)f : f \in \mathcal{F} \}$$
 
-#### **Further extensions.**
+## **Further extensions.**
 
 The proof for bounding the excess risk, via a bound on the uniform deviation, is only applicable in the extremely limited case where $$\mathcal{F}$$ is a finite function class. However, in many practical settings say, the set of all linear classifiers, the associated function class $$\mathcal{F}$$ will have infinite cardinality. This is why in some more advanced texts on statistical learning theory, such as [7], the proof in the previous section is considered 'trivial', and as a stepping stone to more sophisticated treatments. Some of the treatments developed in statistical learning theory are the following, which will be covered in future posts in more detail:
 
@@ -442,7 +442,7 @@ The proof for bounding the excess risk, via a bound on the uniform deviation, is
 
 Finally, it needs to be said that uniform deviations, or uniform convergence are *not the only* means in statistical learning theory for getting a handle on generalisation error. Other approaches exist, such a *sample compression*, *algorithmic stability*, and *PAC-Bayesian analysis*, which I hope to cover in future posts.
 
-#### **References.**
+## **References.**
 
 1\. Wasserman, L. (2016). Convergence theory, lecture recording, Intermediate Statistics 36-705 Fall 2016, Carnegie Mellon University, delivered 7th September 2016. Retrieved from <https://www.youtube.com/watch?v=UFInqHnkYPU&list=PLJPW8OTey_OZk6K_9QLpguoPg_Ip3GkW_&index=3>
 

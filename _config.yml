@@ -43,13 +43,14 @@ plugins:
 # NB: Use this for MATHJAX functionality.
 # use_mathjax: true
 
-# NB: Use this for default KaTeX functionality (using auto-rendering, to work with GitHub pages).
+# NB: Use this for KaTeX functionality (using auto-rendering, to work with GitHub pages).
 # https://www.xuningyang.com/2021-01-11-katex-with-jekyll/
 kramdown:
   math_engine: katex
 
-# NB: Use this for overriding KaTeX defaults for inline mathematics (NOT CURRENTLY WORKING).
-# Overrides the usage of $$ for inline mathematics to $ instead.
+# NB: Use this to override default KaTeX settings for $ delimiters (NOT CURRENTLY WORKING).
+# This is to be able to use single $ instead of $$ for inline mathematics in KaTeX.s
+# Accompanies new lines added in KaTeX script in KaTeX.
 # kramdown:
 #   math_engine: nil
 
@@ -74,4 +75,4 @@ kramdown:
 #   - vendor/ruby/
 
 # NB: Use this to show excerpts from your blog article in the home page.
-# show_excerpts: true
+show_excerpts: true

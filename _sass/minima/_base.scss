@@ -14,7 +14,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family; // font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
   color: $text-color;
   background-color: $background-color;
   -webkit-text-size-adjust: 100%;
@@ -94,20 +94,19 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: $base-font-weight;
+  font-weight: $base-font-weight; // font-weight: $base-font-weight;
 }
-
 
 
 /**
  * Links
  */
 a {
-  color: $brand-color;
+  color:  #1756a9; //color: $brand-color;
   text-decoration: none;
 
   &:visited {
-    color: darken($brand-color, 15%);
+    color: #1756a9; // darken($brand-color, 15%);
   }
 
   &:hover {
@@ -128,9 +127,9 @@ a {
 /**
  * Blockquotes
  */
-blockquote {
+ blockquote {
   color: $text-color; //color: $grey-color;
-  border-left: 4px solid #00008B; // border-left: 4px solid $grey-color-light;
+  border-left: 4px solid #00008B; // border-left: 4px solid $grey-color-light; (default)
   padding-left: $spacing-unit / 2;
   @include relative-font-size(1); // @include relative-font-size(1.125);
   letter-spacing: 0px; // letter-spacing: -1px;
@@ -148,21 +147,23 @@ blockquote {
  */
 pre,
 code {
-  @include relative-font-size(0.9375);
-  border: 1px solid $grey-color-light;
-  border-radius: 3px;
-  background-color: #eef;
+  @include relative-font-size(0.80);
+  // border: 1px solid $grey-color-light; // border: 1px solid $grey-color-light;
+  // border-radius: 3px; // border-radius: 3px
+  background-color: #fff; // background-color: #eef;
 }
 
 code {
   padding: 1px 5px;
 }
 
-pre {
+pre { 
   padding: 8px 12px;
   overflow-x: auto;
 
   > code {
+    font-family: "JetBrains Mono", monospace; // not present by default.
+    // font-family: 'Fira Code', monospace;
     border: 0;
     padding-right: 0;
     padding-left: 0;
@@ -251,4 +252,68 @@ table {
   td {
     border: 1px solid $grey-color-light;
   }
+}
+
+// NB: distill.pub style front-matter.
+.front-matter {
+  padding: 20px 0;
+  border-bottom: 1px solid $grey-color-light; // border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.front-matter h4 {
+  font-family: $base-font-family; // font-family: -apple-system, Helvetica, arial, sans-serif;
+}
+.front-matter .bylines .byline {
+  margin-right: 20px; // margin-right: 20px;
+  float: left;
+}
+.front-matter .bylines .byline h3,
+.front-matter .bylines .byline p {
+  margin: 0;
+  font-family: $base-font-family; // font-family: -apple-system, Helvetica, arial, sans-serif;
+}
+.front-matter .bylines .byline h3 {
+  font-size: 9px; // font-size: 9px;
+  text-transform: uppercase; 
+  color: rgba(0, 0, 0, 0.5);
+}
+.front-matter .bylines .byline p {
+  font-size: 10px;
+  line-height: 1.6em; // line-height: 1.6em;
+}
+
+// NB: clear
+.clear {
+  clear: both;
+}
+
+// NB: Content wrapper.
+.wrapper-content {
+  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+  max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $spacing-unit;
+  padding-left: $spacing-unit;
+  padding-top: $spacing-unit; // Pad white space when article begins.
+  @extend %clearfix;
+
+  @include media-query($on-laptop) {
+    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+    max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+    padding-right: $spacing-unit / 2;
+    padding-left: $spacing-unit / 2;
+  }
+
+  h2 {
+    font-size: 26px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2); // border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 1rem;
+    padding-top: 1em;
+
+  }
+}
+
+// NB: KaTeX font size override.
+.katex { 
+  font-size: 1.12em !important; // font-size: 1.21em !important;
 }

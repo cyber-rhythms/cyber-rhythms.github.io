@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+
+    {%- include header.html -%}
+
+    <main class="blog-page-content" aria-label="Content">
+      <div class='front-matter'>
+        <div class='wrapper'>
+          <h1><strong>{{ page.title }}</strong></h1>
+          <h4><strong>{{ page.subtitle }}</strong></h4>
+          <div class='bylines'>
+            <div class='byline'>
+              <h3><strong>Published</strong></h3>
+              <p><strong>{{ page.date |  date: '%d %B %Y' }}</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='wrapper-content'>
+        {{ content }}
+      </div>
+    </main>
+
+    {%- include footer.html -%}
+
+  </body>
+
+</html>

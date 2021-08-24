@@ -9,7 +9,7 @@
     {%- include google-analytics.html -%}
   {%- endif -%}
 
-  <!--NB: Code snippet for using MATHJAX in the blog.-->
+  <!-- Code snippet for using MATHJAX in the blog.-->
   <!-- If you want to use Mathjax again, uncomment the code beginning '{%if site.use_mathjax %}' and ending '{% endif %}' below-->
   <!-- Make sure that the first character and last character of the code respect the indentations, 1 tab in from <head>-->
   <!-- From https://github.com/fastai/fast_template/blob/6f72d2957a4e302e437f4437dd6a1e5a1f14274a/_includes/head.html -->
@@ -31,12 +31,10 @@
       });
     </script>
   {% endif %}-->
+  
+  {%- include mathjax.html -%}
 
-  <!--NB: Have included a new mathjax.html in _includes, so that Plotly can display Mathjax appropriately.-->
-  <!--TO DO: Make this conditional on a parameter in Markdown YAML front matter.-->
-  {%- include mathjax.html-%}
-
-  <!--NB: Code snippet for using KaTeX with browser auto-rendering from a content delivery network, compatible with Github pages.-->
+  <!--Code snippet for using KaTeX with auto-rendering, compatible with Github pages.-->
   <!--From method 1. at https://www.xuningyang.com/2021-01-11-katex-with-jekyll/-->
   <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
@@ -49,11 +47,17 @@
       });
   </script>-->
 
+  <!--NB: KaTeX.org updated snippet.-->
+  <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>-->
+
   <!--NB: Code snippet for using KaTeX with local files, compatiblity with Github pages not yet checked.-->
   <!--https://stackoverflow.com/questions/60905163/why-katex-is-not-loaded-locally?rq=1-->
-  <link rel="stylesheet" href="/assets/katex/katex.min.css">
-  <script defer src="/assets/katex/katex.min.js"></script>
-  <script defer src="/assets/katex/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="/assets/katex/katex.css">
+  <script defer src="/assets/katex/katex.js"></script>
+  <script defer src="/assets/katex/contrib/auto-render.js"></script>
   <script>
       document.addEventListener("DOMContentLoaded", function() {
           renderMathInElement(document.body, {
@@ -61,7 +65,23 @@
           });
       });
   </script>
-  
+
+  <!--NB: JetBrains Mono font addition.-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+
+  <!--NB: Fira Code font addition-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+
+  <!--NB: Palatino Linotype 400 font addition.-->
+  <link href="http://fonts.cdnfonts.com/css/palatino-linotype?styles=15511" rel="stylesheet">
+  <style>
+    @import url('http://fonts.cdnfonts.com/css/palatino-linotype?styles=15511');
+  </style>
+
 </head>
 
 
