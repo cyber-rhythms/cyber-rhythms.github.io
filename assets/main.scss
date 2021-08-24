@@ -4,7 +4,7 @@
 
 @import "minima";
 
-// NB: To address deeper browser compatibility for Palatino Linotype fonts.
+// NB: To address deeper browser compatibility for Palatino Linotype W02 fonts.
 /*@import url(//db.onlinewebfonts.com/c/6a0482275e06b01d85575eb3b9894566?family=Palatino+Linotype);
 @font-face {font-family: "Palatino Linotype";
             src: url("//db.onlinewebfonts.com/t/6a0482275e06b01d85575eb3b9894566.eot");
@@ -15,11 +15,11 @@
                  url("//db.onlinewebfonts.com/t/6a0482275e06b01d85575eb3b9894566.svg#Palatino Linotype") format("svg");
 }*/
 
-// NB: To address deeper browser compatibility for Palatino Linotype fonts using locally hosted files.
-@font-face {font-family: "Palatino Linotype";
+// NB: To address deeper browser compatibility for Palatino Linotype W02 fonts using locally hosted files.
+@font-face {font-family: "Palatino Linotype W02";
             src: url("/assets/Palatino Linotype W02/Palatino Linotype W02.eot");
             src: url("/assets/Palatino Linotype W02/Palatino Linotype W02.woff2") format("woff2"),
-                 url("/assets/Palatino Linotype W02/Palatino Linotype W02.woff") format("woff"),
-                 url("/assets/Palatino Linotype W02/Palatino Linotype W02.ttf") format("truetype"),
-                 url("/assets/Palatino Linotype W02/Palatino Linotype W02.svg#svg Palatino Linotype") format("svg");
+            url("/assets/Palatino Linotype W02/Palatino Linotype W02.woff") format("woff"),
+            url("/assets/Palatino Linotype W02/Palatino Linotype W02.ttf") format("truetype"),
+            url("/assets/Palatino Linotype W02/Palatino Linotype W02.svg#svg Palatino Linotype W02") format("svg");
 }
