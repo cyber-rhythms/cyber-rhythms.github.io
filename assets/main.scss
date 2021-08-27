@@ -4,18 +4,7 @@
 
 @import "minima";
 
-// NB: To address deeper browser compatibility for Palatino Linotype W02 fonts.
-/*@import url(//db.onlinewebfonts.com/c/6a0482275e06b01d85575eb3b9894566?family=Palatino+Linotype);
-@font-face {font-family: "Palatino Linotype";
-            src: url("//db.onlinewebfonts.com/t/6a0482275e06b01d85575eb3b9894566.eot");
-            src: url("//db.onlinewebfonts.com/t/6a0482275e06b01d85575eb3b9894566.eot?#iefix") format("embedded-opentype"),
-                 url("//db.onlinewebfonts.com/t/6a0482275e06b01d85575eb3b9894566.woff2") format("woff2"),
-                 url("//db.onlinewebfonts.com/t/6a0482275e06b01d85575eb3b9894566.woff") format("woff"),
-                 url("//db.onlinewebfonts.com/t/6a0482275e06b01d85575eb3b9894566.ttf") format("truetype"),
-                 url("//db.onlinewebfonts.com/t/6a0482275e06b01d85575eb3b9894566.svg#Palatino Linotype") format("svg");
-}*/
-
-// NB: To address deeper browser compatibility for Palatino Linotype W02 fonts using locally hosted files.
+// NB: Locally hosted Palatino Linotype font files.
 @font-face {font-family: "Palatino Linotype";
             src: url("/assets/Palatino Linotype W02/Palatino Linotype W02.eot");
             src: url("/assets/Palatino Linotype W02/Palatino Linotype W02.woff2") format("woff2"),
@@ -37,6 +26,7 @@
      font-style: italic;
 }
 
+// NB: Something strange going on with this Palatino Linotype bold, prefer browser 'faux bold'.
 /*@font-face {
      font-family: "Palatino Linotype";
      src: url("/assets/Palatino Linotype W02 Bold/Palatino Linotype W02 Bold.eot");

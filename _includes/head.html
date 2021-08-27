@@ -4,7 +4,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {%- seo -%}
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+
+  <!--NB: Preload Palatino Linotype .woff2 fonts for loading speed.-->
   <link rel="preload" href="{{" assets/Palatino Linotype W02.woff2"| relative_url }}" as="font" type="font/woff2" crossorigin="anonymous">
+  
   {%- feed_meta -%}
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}
