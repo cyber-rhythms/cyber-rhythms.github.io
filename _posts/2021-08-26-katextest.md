@@ -4,7 +4,7 @@ title:  "KaTeX v0.13.13 test."
 date:   2021-08-26 09:00:00 +0000
 categories: jekyll update   
 katex: True
-use_mathjax: False
+use_mathjax: True
 ---
 
 <style>
