@@ -27,3 +27,5 @@ f(x) = 10
 \begin{equation}
 f(x) = 11
 \end{equation}
+
+$\mathcal{H}$.
