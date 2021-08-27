@@ -19,7 +19,42 @@
 @font-face {font-family: "Palatino Linotype";
             src: url("/assets/Palatino Linotype W02/Palatino Linotype W02.eot");
             src: url("/assets/Palatino Linotype W02/Palatino Linotype W02.woff2") format("woff2"),
-            url("/assets/Palatino Linotype W02/Palatino Linotype W02.woff") format("woff"),
-            url("/assets/Palatino Linotype W02/Palatino Linotype W02.ttf") format("truetype"),
-            url("/assets/Palatino Linotype W02/Palatino Linotype W02.svg#svg Palatino Linotype") format("svg");
+                 url("/assets/Palatino Linotype W02/Palatino Linotype W02.woff") format("woff"),
+                 url("/assets/Palatino Linotype W02/Palatino Linotype W02.ttf") format("truetype"),
+                 url("/assets/Palatino Linotype W02/Palatino Linotype W02.svg#svg Palatino Linotype") format("svg");
+           font-weight: 400;
+           font-style: normal;
+}
+
+@font-face {
+     font-family: "Palatino Linotype";
+     src: url("/assets/Palatino Linotype W02 Italic/Palatino Linotype W02 Italic.eot");
+     src: url("/assets/Palatino Linotype W02 Italic/Palatino Linotype W02 Italic.woff2") format("woff2"),
+          url("/assets/Palatino Linotype W02 Italic/Palatino Linotype W02 Italic.woff") format("woff"),
+          url("/assets/Palatino Linotype W02 Italic/Palatino Linotype W02 Italic.ttf") format("truetype"),
+          url("/assets/Palatino Linotype W02 Italic/Palatino Linotype W02 Italic.svg#svg Palatino Linotype Italic") format("svg");
+     font-weight: 400;
+     font-style: italic;
+}
+
+/*@font-face {
+     font-family: "Palatino Linotype";
+     src: url("/assets/Palatino Linotype W02 Bold/Palatino Linotype W02 Bold.eot");
+     src: url("/assets/Palatino Linotype W02 Bold/Palatino Linotype W02 Bold.woff2") format("woff2"),
+          url("/assets/Palatino Linotype W02 Bold/Palatino Linotype W02 Bold.woff") format("woff"),
+          url("/assets/Palatino Linotype W02 Bold/Palatino Linotype W02 Bold.ttf") format("truetype"),
+          url("/assets/Palatino Linotype W02 Bold/Palatino Linotype W02 Bold.svg#svg Palatino Linotype Bold") format("svg");
+     font-weight: 700;
+     font-style: normal;
+}*/
+
+@font-face {
+     font-family: "Palatino Linotype";
+     src: url("/assets/Palatino Linotype W02 Bold It/Palatino Linotype W02 Bold It.eot");
+     src: url("/assets/Palatino Linotype W02 Bold It/Palatino Linotype W02 Bold It.woff2") format("woff2"),
+          url("/assets/Palatino Linotype W02 Bold It/Palatino Linotype W02 Bold It.woff") format("woff"),
+          url("/assets/Palatino Linotype W02 Bold It/Palatino Linotype W02 Bold It.ttf") format("truetype"),
+          url("/assets/Palatino Linotype W02 Bold It/Palatino Linotype W02 Bold It.svg#svg Palatino Linotype Bold Italic") format("svg");
+     font-weight: 700;
+     font-style: italic;
 }
