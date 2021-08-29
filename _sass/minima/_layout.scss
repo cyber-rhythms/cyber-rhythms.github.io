@@ -24,7 +24,8 @@
   }
   
   &:hover {
-    color: rgba(255, 255, 255, 1); 
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
   }
 }
 
@@ -47,6 +48,11 @@
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
       margin-right: 20px;
+    }
+    
+    &:hover {
+      color: rgba(255, 255, 255, 1);
+      text-decoration: none;
     }
   }
 
