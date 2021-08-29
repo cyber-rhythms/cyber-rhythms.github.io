@@ -162,7 +162,8 @@ pre {
   overflow-x: auto;
 
   > code {
-    font-family: "JetBrains Mono", monospace; // not present by default.
+    font-family: "Consolas";
+    // font-family: "JetBrains Mono", monospace; // not present by default.
     // font-family: 'Fira Code', monospace;
     border: 0;
     padding-right: 0;
@@ -316,4 +317,11 @@ table {
 // NB: KaTeX font size override.
 .katex { 
   font-size: 1.12em !important; // font-size: 1.21em !important;
+}
+
+// NB: Palatino Linotype default italic size is a little spindley and small.
+// NB: Need to adjust accordingly.
+em {
+  font-size: $base-font-size * 1.05;
+  font-style: italic; 
 }

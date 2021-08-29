@@ -6,22 +6,22 @@
 
 // NB: Locally hosted Palatino Linotype font files.
 @font-face {font-family: "Palatino Linotype";
-            src: url("/assets/Palatino Linotype W02/Palatino Linotype W02.eot");
-            src: url("/assets/Palatino Linotype W02/Palatino Linotype W02.woff2") format("woff2"),
-                 url("/assets/Palatino Linotype W02/Palatino Linotype W02.woff") format("woff"),
-                 url("/assets/Palatino Linotype W02/Palatino Linotype W02.ttf") format("truetype"),
-                 url("/assets/Palatino Linotype W02/Palatino Linotype W02.svg#svg Palatino Linotype") format("svg");
+            src: url("/assets/fonts/Palatino Linotype W02/Palatino Linotype W02.eot");
+            src: url("/assets/fonts/Palatino Linotype W02/Palatino Linotype W02.woff2") format("woff2"),
+                 url("/assets/fonts/Palatino Linotype W02/Palatino Linotype W02.woff") format("woff"),
+                 url("/assets/fonts/Palatino Linotype W02/Palatino Linotype W02.ttf") format("truetype"),
+                 url("/assets/fonts/Palatino Linotype W02/Palatino Linotype W02.svg#svg Palatino Linotype") format("svg");
            font-weight: 400;
            font-style: normal;
 }
 
 @font-face {
      font-family: "Palatino Linotype";
-     src: url("/assets/Palatino Linotype W02 Italic/Palatino Linotype W02 Italic.eot");
-     src: url("/assets/Palatino Linotype W02 Italic/Palatino Linotype W02 Italic.woff2") format("woff2"),
-          url("/assets/Palatino Linotype W02 Italic/Palatino Linotype W02 Italic.woff") format("woff"),
-          url("/assets/Palatino Linotype W02 Italic/Palatino Linotype W02 Italic.ttf") format("truetype"),
-          url("/assets/Palatino Linotype W02 Italic/Palatino Linotype W02 Italic.svg#svg Palatino Linotype Italic") format("svg");
+     src: url("/assets/fonts/Palatino Linotype W02 Italic/Palatino Linotype W02 Italic.eot");
+     src: url("/assets/fonts/Palatino Linotype W02 Italic/Palatino Linotype W02 Italic.woff2") format("woff2"),
+          url("/assets/fonts/Palatino Linotype W02 Italic/Palatino Linotype W02 Italic.woff") format("woff"),
+          url("/assets/fonts/Palatino Linotype W02 Italic/Palatino Linotype W02 Italic.ttf") format("truetype"),
+          url("/assets/fonts/Palatino Linotype W02 Italic/Palatino Linotype W02 Italic.svg#svg Palatino Linotype Italic") format("svg");
      font-weight: 400;
      font-style: italic;
 }
@@ -29,22 +29,68 @@
 // NB: Something strange going on with this Palatino Linotype bold, prefer browser 'faux bold'.
 /*@font-face {
      font-family: "Palatino Linotype";
-     src: url("/assets/Palatino Linotype W02 Bold/Palatino Linotype W02 Bold.eot");
-     src: url("/assets/Palatino Linotype W02 Bold/Palatino Linotype W02 Bold.woff2") format("woff2"),
-          url("/assets/Palatino Linotype W02 Bold/Palatino Linotype W02 Bold.woff") format("woff"),
-          url("/assets/Palatino Linotype W02 Bold/Palatino Linotype W02 Bold.ttf") format("truetype"),
-          url("/assets/Palatino Linotype W02 Bold/Palatino Linotype W02 Bold.svg#svg Palatino Linotype Bold") format("svg");
+     src: url("/assets/fonts/Palatino Linotype W02 Bold/Palatino Linotype W02 Bold.eot");
+     src: url("/assets/fonts/Palatino Linotype W02 Bold/Palatino Linotype W02 Bold.woff2") format("woff2"),
+          url("/assets/fonts/Palatino Linotype W02 Bold/Palatino Linotype W02 Bold.woff") format("woff"),
+          url("/assets/fonts/Palatino Linotype W02 Bold/Palatino Linotype W02 Bold.ttf") format("truetype"),
+          url("/assets/fonts/Palatino Linotype W02 Bold/Palatino Linotype W02 Bold.svg#svg Palatino Linotype Bold") format("svg");
      font-weight: 700;
      font-style: normal;
 }*/
 
 @font-face {
      font-family: "Palatino Linotype";
-     src: url("/assets/Palatino Linotype W02 Bold It/Palatino Linotype W02 Bold It.eot");
-     src: url("/assets/Palatino Linotype W02 Bold It/Palatino Linotype W02 Bold It.woff2") format("woff2"),
-          url("/assets/Palatino Linotype W02 Bold It/Palatino Linotype W02 Bold It.woff") format("woff"),
-          url("/assets/Palatino Linotype W02 Bold It/Palatino Linotype W02 Bold It.ttf") format("truetype"),
-          url("/assets/Palatino Linotype W02 Bold It/Palatino Linotype W02 Bold It.svg#svg Palatino Linotype Bold Italic") format("svg");
+     src: url("/assets/fonts/Palatino Linotype W02 Bold It/Palatino Linotype W02 Bold It.eot");
+     src: url("/assets/fonts/Palatino Linotype W02 Bold It/Palatino Linotype W02 Bold It.woff2") format("woff2"),
+          url("/assets/fonts/Palatino Linotype W02 Bold It/Palatino Linotype W02 Bold It.woff") format("woff"),
+          url("/assets/fonts/Palatino Linotype W02 Bold It/Palatino Linotype W02 Bold It.ttf") format("truetype"),
+          url("/assets/fonts/Palatino Linotype W02 Bold It/Palatino Linotype W02 Bold It.svg#svg Palatino Linotype Bold Italic") format("svg");
+     font-weight: 700;
+     font-style: italic;
+}
+
+// NB: Locally hosted Consolas font files.
+
+@font-face {
+     font-family: "Consolas";
+     src: url("/assets/fonts/Consolas/Consolas.eot");
+     src: url("/assets/fonts/Consolas/Consolas.woff2") format("woff2"),
+          url("/assets/fonts/Consolas/Consolas.woff") format("woff"),
+          url("/assets/fonts/Consolas/Consolas.ttf") format("truetype"),
+          url("/assets/fonts/Consolas/Consolas.svg#svg Consolas") format("svg");
+     font-weight: 400;
+     font-style: normal;
+}
+
+@font-face {
+     font-family: "Consolas";
+     src: url("/assets/fonts/Consolas Italic/Consolas Italic.eot");
+     src: url("/assets/fonts/Consolas Italic/Consolas Italic.woff2") format("woff2"),
+          url("/assets/fonts/Consolas Italic/Consolas Italic.woff") format("woff"),
+          url("/assets/fonts/Consolas Italic/Consolas Italic.ttf") format("truetype"),
+          url("/assets/fonts/Consolas Italic/Consolas Italic.svg#svg Consolas Italic") format("svg");
+     font-weight: 400;
+     font-style: italic;
+}
+
+@font-face {
+     font-family: "Consolas";
+     src: url("/assets/fonts/Consolas Bold/Consolas Bold.eot");
+     src: url("/assets/fonts/Consolas Bold/Consolas Bold.woff2") format("woff2"),
+          url("/assets/fonts/Consolas Bold/Consolas Bold.woff") format("woff"),
+          url("/assets/fonts/Consolas Bold/Consolas Bold.ttf") format("truetype"),
+          url("/assets/fonts/Consolas Bold/Consolas Bold.svg#svg Consolas Bold") format("svg");
+     font-weight: 700;
+     font-style: normal;
+}
+
+@font-face {
+     font-family: "Consolas";
+     src: url("/assets/fonts/Consolas Bold Italic/Consolas Bold Italic.eot");
+     src: url("/assets/fonts/Consolas Bold Italic/Consolas Bold Italic.woff2") format("woff2"),
+          url("/assets/fonts/Consolas Bold Italic/Consolas Bold Italic.woff") format("woff"),
+          url("/assets/fonts/Consolas Bold Italic/Consolas Bold Italic.ttf") format("truetype"),
+          url("/assets/fonts/Consolas Bold Italic/Consolas Bold Italic.svg#svg Consolas Bold Italic") format("svg");
      font-weight: 700;
      font-style: italic;
 }

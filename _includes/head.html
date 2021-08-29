@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
 
   <!--NB: Preload Palatino Linotype .woff2 fonts for loading speed.-->
-  <link rel="preload" href="{{" assets/Palatino Linotype W02.woff2"| relative_url }}" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="{{ "/assets/fonts/Palatino Linotype W02/Palatino Linotype W02.woff2" | relative_url }}" as="font" type="font/woff2" crossorigin="anonymous">
   
   {%- feed_meta -%}
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
@@ -58,7 +58,7 @@
       });
   </script>-->
 
-  <!--NB: KaTeX.org updated snippet.-->
+  <!--NB: KaTeX.org CDN updated snippet.-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"
@@ -86,9 +86,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
-
-  <!--NB: Palatino Linotype 400 font addition with deepest browser compatibility, web hosted (TOO SLOW).-->
-  <!--<link href="//db.onlinewebfonts.com/c/6a0482275e06b01d85575eb3b9894566?family=Palatino+Linotype" rel="stylesheet" type="text/css"/>-->
 
 </head>
 
