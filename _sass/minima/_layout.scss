@@ -22,6 +22,10 @@
   &:visited {
     color: rgba(255, 255, 255, 0.8); // color: $grey-color-dark;
   }
+  
+  &:hover {
+    color: rgba(255, 255, 255, 1); 
+  }
 }
 
 .site-nav {
